@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1.29042 0.61296 -5" rotation="0 45 0" color="blue" material="src: #metal"></a-box>
+      <a-sphere position="0.97939 2.4576 -4.87069" radius="1.25" color="pink" material="src: #madera"></a-sphere>
+      <a-cylinder position="1.03996 0.86886 -5" radius="0.5" height="1.5" color="red" material="src: #papel"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="white" material="src: #piedra"></a-plane>
+      <a-sky color="#DCF9FA" material="src: #cielo"></a-sky>
+
+      <a-assets>
+        <img id="cielo" src="material/space-2294795_1280.webp" alt="">
+        <img id="piedra" src="material/piedra-negro_1194-5746.avif" alt="">
+        <img id="papel" src="material/textura-papel-blanco_1194-2301.avif" alt="">
+        <img id="madera" src="material/fondo-textura-madera-realista_23-2149221129.avif" alt="">
+        <img id="metal" src="material/lay-flat-superficie-metalica_23-2148796575.avif" alt="">
+        <a-asset-item id="cityModel" src="models/maxwell_the_cat_dingus.glb"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="models/maxwell_the_cat_dingus.glb" modify-materials="" scale="0.05811 0.05811 0.05811" position="-1.16123 1.1004 -4.84279" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        <a-sphere position="5 0 0" color="mediumseagreen"></a-sphere>></a-entity>
+    </a-scene>
+  </body>
+</html>
